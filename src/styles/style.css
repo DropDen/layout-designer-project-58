@@ -1,0 +1,179 @@
+
+
+@font-face {
+  font-weight: 400;
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Neucha;
+  src: url("../fonts/Neucha-Regular.ttf");
+}
+
+:root {
+     --white: #fff;
+     --translucent-white: #d7ccc0;
+     --light: #f5f4f0;
+     --primary: #fe8a02;
+     --primary-dark: #42413c;
+     --dark: #2a2626;
+     --translucent-dark: #908d8b;
+     --brown: #b09a81;
+     --blue: #1085c5;
+}
+
+body {
+  overflow-x: hidden;
+
+  color: var(--dark);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: OpenSans, sans-serif;
+  line-height: 1.6em;
+}
+
+h1,
+h2,
+h3 {
+  z-index: 1;
+
+  color: var(--primary);
+  font-weight: 400;
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+header {
+  background-color: var(--light);
+}
+
+a {
+  text-decoration: none;
+}
+
+.dark {
+  color: var(--dark);
+}
+
+.back {
+position: relative;
+}
+
+.back::before {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.1;
+  content: "";
+}
+
+.section {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 1110px;
+  min-height: 700px;
+
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+
+.header-image {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+}
+
+
+.text-2 {
+  display: flex;
+  gap: 30px;
+}
+
+.text {
+  flex-basis: 50%;
+}
+
+.text p {
+  margin-bottom: 1.6em;
+} 
+
+.btn {
+  display: inline-flex;
+  padding: 12px 24px;
+
+  color: var(--white);
+  text-transform: uppercase;
+
+  background-color: var(--primary);
+
+  cursor: pointer;
+
+}
+
+.mt-1 {
+  margin-top: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
