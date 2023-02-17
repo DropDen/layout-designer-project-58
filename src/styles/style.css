@@ -171,7 +171,7 @@ color: var(--color-light);
   background-color: var(--color-main-dark);
   margin: -84px;
 }
-#navigator {
+#navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -235,7 +235,7 @@ color: var(--color-light);
   color: var(--color-white);
 }
 
-#premature-optimization, back {
+#premature-optimization {
   background-color: var(--color-brown);
 }
 
