@@ -25,36 +25,35 @@
 }
 
 :root {
-     --white: #fff;
-     --translucent-white: #d7ccc0;
-     --light: #f5f4f0;
-     --primary: #fe8a02;
-     --primary-dark: #42413c;
-     --dark: #2a2626;
-     --translucent-dark: #908d8b;
-     --brown: #b09a81;
-     --blue: #1085c5;
+  --color-white: #fff;
+  --color-white-opacity: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-main: #fe8a02;
+  --color-main-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-dark-opacity: #908d8b;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
 }
 
 body {
+  width: 1440px;
+  margin: auto;
   overflow-x: hidden;
-
-  color: var(--dark);
+  font-family: OpenSans, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  font-family: OpenSans, sans-serif;
   line-height: 1.6em;
+  color: var(--color-dark);
 }
 
 h1,
 h2,
 h3 {
-  z-index: 1;
-
-  color: var(--primary);
-  font-weight: 400;
   font-family: Neucha, sans-serif;
+  font-weight: 400;
   line-height: 1.2em;
+  color: var(--color-dark);
 }
 
 h1 {
@@ -69,24 +68,22 @@ h3 {
   font-size: 34px;
 }
 
-header {
-  background-color: var(--light);
-}
 
-a {
-  text-decoration: none;
-}
-
-.dark {
-  color: var(--dark);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .back {
-position: relative;
+  position: relative;
+  background-color: var(--color-light);
 }
 
 .back::before {
   position: absolute;
+  top: 0;
+  right: 0;
 
   width: 100%;
   height: 100%;
@@ -99,81 +96,157 @@ position: relative;
   content: "";
 }
 
-.section {
+.title-image{
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  max-width: 1110px;
-  min-height: 700px;
-
-  margin: 0 auto;
-  padding: 100px 0;
+  padding-top: 55px;
+  padding-left: 461px;
 }
 
+.orange {
+  color: var(--color-main);
+}
+.white {
+color: var(--color-light);
+}
 
-.header-image {
+.title-wrap {
   position: absolute;
-  top: 55px;
-  right: -270px;
+  padding-top: 100px;
+  padding-left: 165px;
+  height: 525px;
 }
 
 
-.text-2 {
+
+.text-wrap {
+/*position: absolute;*/
+
   display: flex;
+  justify-content: space-between;
   gap: 30px;
+  padding: 0 165px 189px;
 }
 
-.text {
+.text-left {
   flex-basis: 50%;
 }
 
-.text p {
-  margin-bottom: 1.6em;
-} 
+.text-right {
+  flex-basis: 50%;
+}
 
-.btn {
-  display: inline-flex;
+.header-bottom-link {
+  display: inline-block;
+  margin-top: 40px;
   padding: 12px 24px;
 
-  color: var(--white);
-  text-transform: uppercase;
+  color: var(--color-white);
+  font-weight: 700;
+  text-decoration: none;
 
-  background-color: var(--primary);
+  background-color: var(--color-main);
+}
 
-  cursor: pointer;
+.second-slide {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.second-slide p {
+  text-align: center;
+  padding-top: 27px;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  padding-top: 30px;
+  z-index: 10;
+}
+
+.second-footer {
+  height: 100px;
+  background-color: var(--color-main-dark);
+  margin: -84px;
+}
+#navigator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 165px 165px 100px;
+  background-color: var(--color-main-dark);
+}
+.navigator-slide {
+  position: relative;
+  width: 350px;
+  height: 323px;
+  margin-bottom: 20px;
+  background-color: var(--color-light);
+}
+
+.number-nav {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+}
+
+.navigator-slide h2 {
+  font-size: 52px;
+}
+.navigator-slide h1 {
+  font-size: 64px;
+}
+.navigator-slide h3 {
+  margin-top: 128px;
+  margin-left: 24px;
+}
+.back-nav-slide {
+  background-color: var(--color-main-dark);
+}
+.navigator-slide p {
+  margin: 16px 24px 24px;
 
 }
 
-.mt-1 {
-  margin-top: 16px;
+.container {
+  display: flex;
+  padding: 100px 165px 0;
+  gap: 30px;
+  font-family: Neucha, sans-serif;
+  font-size: 24px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+.ikea-image {
+  vertical-align: middle;
 }
 
+.line {
+  background-color: var(--color-brown);
+  margin: 100px 165px 20px 165px ;
+}
 
+.line-text {
+  padding: 5px 10px 5px;
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-white);
+}
 
+#premature-optimization, back {
+  background-color: var(--color-brown);
+}
 
+/*#premature-optimization, .container, h1, h3 {*/
+/*  color: var(--color-white);*/
+/*}*/
 
+#premature-optimization .line {
+  background-color: var(--color-white);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#premature-optimization .line-text {
+  color: var(--color-brown);
+}
