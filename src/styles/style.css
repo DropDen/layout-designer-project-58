@@ -584,9 +584,3 @@ img {
 .footer-text:last-child {
   margin-bottom: 0;
 }
-
-.footer-text a {
-  text-decoration: underline;
-
-  color: var(--blue);
-}
